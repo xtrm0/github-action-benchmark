@@ -25,8 +25,8 @@ if ! git diff --cached --quiet; then
 fi
 
 branch="$(git symbolic-ref --short HEAD)"
-if [[ "$branch" != "master" ]]; then
-    echo 'Current branch is not master. Please move to master before running this script' >&2
+if [[ "$branch" != "publish" ]]; then
+    echo 'Current branch is not publish. Please move to publish before running this script' >&2
     exit 1
 fi
 
